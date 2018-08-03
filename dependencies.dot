@@ -31,11 +31,11 @@ digraph larvitlibs {
 		larvitcms
 		larvitbase_www
 		larvitammail
+		larvitcss
 	}
 
 	edge [style=invis, weight=2]
 
-	larvitcss
 	larvitdbmigration [color = green]
 	larvituser [color = purple2]
 	larvitimages
@@ -43,7 +43,6 @@ digraph larvitlibs {
 	larvitamsync [color = navyblue]
 	larvitrouter [color = tan4]
 	larvitbase_api [color = peachpuff4]
-	larvitslugify
 
 	edge [style=solid, weight=1]
 	larvitfs -> larvitbase_www [color = red]
