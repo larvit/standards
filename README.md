@@ -1,1 +1,15 @@
-# standards and other generic documentation
+# Larv IT software development standards, policys and more
+
+## Software goals
+
+* Clear and well documented API
+* Autodetect settings wherever possible (to minimise configuration) but always allow overrides
+* It should not cause you to change your workflow against your wishes - don't enforce opinions on users (Taken from renovate)
+* All behaviour should be configurable, down to a ridiculous level if desired (Taken from renovate)
+* Put a good effort in good naming - API calls, variables, functions, methods
+
+
+## Build/Test policy
+
+* Always strive to use official docker images in builds
+* Avoid installing third party packages in tests, for example apt-get etc. Instead pre-built images should be used, ideally official images from upstream.
