@@ -2,81 +2,30 @@ digraph larvitlibs {
 	rank=same
 	rankdir=LR;
 
-	subgraph parents {
-		larvitfs [color = red]
-		larvitutils [color = hotpink4]
-		check_object_key [color = mediumvioletred]
-		larvitmail [color = olivedrab]
-		larvitslugify [color = orange]
-		larvitbase [color = red4]
-		larvitreqparser [color = slateblue4]
-	}
-
 	subgraph childs_1 {
-		larvitdb [color = blue]
-		larvitamintercom [color = gold4]
+		larvitdb [color = blue, label = "!larvitdb"]
 	}
 
 	subgraph childs_last {
 		larvituser_api
-		larviturltopdf
-		larvitsmpp
-		larvitadmingui
-		larvitlog
+		larvitadmingui [label = "!larvitadmingui"]
 		larvitproduct
-		larvitgeodata
+		larvitgeodata [label = "!larvitgeodata"]
 		larvitamsettings
 		larvitorder
 		larvitfiles
 		larvitcms
-		larvitbase_www
-		larvitammail
-		larvitcss
 	}
 
 	edge [style=invis, weight=2]
 
-	larvitdbmigration [color = green]
-	larvituser [color = purple2]
+	larvitdbmigration [color = green, label = "!larvitdbmigration"]
+	larvituser [color = purple2, label = "!larvituser"]
 	larvitimages
-	larvitsession
-	larvitamsync [color = navyblue]
-	larvitrouter [color = tan4]
-	larvitbase_api [color = peachpuff4]
+	larvitsession [label = "!larvitsession"]
+	larvitamsync [color = navyblue, label = "!larvitamsync"]
 
 	edge [style=solid, weight=1]
-	larvitfs -> larvitbase_www [color = red]
-	larvitfs -> larvitbase_api [color = red]
-	larvitfs -> larvitcms [color = red]
-	larvitfs -> larvitfiles [color = red]
-	larvitfs -> larvitcss [color = red]
-	larvitfs -> larvitrouter [color = red]
-	larvitfs -> larvitadmingui [color = red]
-	larvitfs -> larvitproduct [color = red]
-
-	larvitutils -> larvitlog [color = hotpink4]
-	larvitutils -> larvituser_api [color = hotpink4]
-	larvitutils -> larvitcms [color = hotpink4]
-	larvitutils -> larvitdbmigration [color = hotpink4]
-	larvitutils -> larvitamintercom [color = hotpink4]
-	larvitutils -> larvitorder [color = hotpink4]
-	larvitutils -> larvitfiles [color = hotpink4]
-	larvitutils -> larvitdb [color = hotpink4]
-	larvitutils -> larvitimages [color = hotpink4]
-	larvitutils -> larvituser [color = hotpink4]
-	larvitutils -> larvitproduct [color = hotpink4]
-	larvitutils -> larvitblog [color = hotpink4]
-	larvitutils -> larvitammail [color = hotpink4]
-
-	check_object_key -> larvitlog [color = mediumvioletred]
-	check_object_key -> larvitblog [color = mediumvioletred]
-	check_object_key -> larvitfiles [color = mediumvioletred]
-	check_object_key -> larvituser [color = mediumvioletred]
-	check_object_key -> larvitimages [color = mediumvioletred]
-	check_object_key -> larvitproduct [color = mediumvioletred]
-	check_object_key -> larvitorder [color = mediumvioletred]
-	check_object_key -> larvitcms [color = mediumvioletred]
-	check_object_key -> larvitamsettings [color = mediumvioletred]
 
 	larvitdb -> larvitadmingui [color = blue]
 	larvitdb -> larvituser [color = blue]
@@ -90,10 +39,6 @@ digraph larvitlibs {
 	larvitdb -> larvitamsync [color = blue]
 	larvitdb -> larvitorder [color = blue]
 	larvitdb -> larvitcms [color = blue]
-
-	larvitbase -> larvitbase_www [color = red4]
-	larvitbase -> larvitadmingui [color = red4]
-	larvitbase -> larvitbase_api [color = red4]
 
 	larvitdbmigration -> larvitadmingui [color = green]
 	larvitdbmigration -> larvitcms [color = green]
@@ -114,18 +59,6 @@ digraph larvitlibs {
 
 	larvitsession -> larvitadmingui
 
-	larvitamintercom -> larvitlog [color = gold4]
-	larvitamintercom -> larvitfiles [color = gold4]
-	larvitamintercom -> larvitblog [color = gold4]
-	larvitamintercom -> larvitproduct [color = gold4]
-	larvitamintercom -> larvitorder [color = gold4]
-	larvitamintercom -> larvitamsettings [color = gold4]
-	larvitamintercom -> larvitamsync [color = gold4]
-	larvitamintercom -> larvituser [color = gold4]
-	larvitamintercom -> larvitimages [color = gold4]
-	larvitamintercom -> larvitcms [color = gold4]
-	larvitamintercom -> larvitammail [color = gold4]
-
 	larvitamsync -> larvitfiles [color = navyblue]
 	larvitamsync -> larvitblog [color = navyblue]
 	larvitamsync -> larvitproduct [color = navyblue]
@@ -134,19 +67,4 @@ digraph larvitlibs {
 	larvitamsync -> larvituser [color = navyblue]
 	larvitamsync -> larvitimages [color = navyblue]
 	larvitamsync -> larvitcms [color = navyblue]
-
-	larvitreqparser -> larvitbase_www [color = slateblue4]
-	larvitreqparser -> larvitbase_api [color = slateblue4]
-
-	larvitrouter -> larvitbase_www [color = tan4]
-	larvitrouter -> larvitbase_api [color = tan4]
-
-	larvitbase_api -> larvitlog [color = peachpuff4]
-	larvitbase_api -> larvituser_api [color = peachpuff4]
-
-	larvitslugify -> larvitcms [color = orange]
-	larvitslugify -> larvitimages [color = orange]
-	larvitslugify -> larvitblog [color = orange]
-
-	larvitmail -> larvitammail [color = olivedrab]
 }
