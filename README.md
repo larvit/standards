@@ -13,3 +13,4 @@
 
 * Always strive to use official docker images in builds
 * Avoid installing third party packages in tests, for example apt-get etc. Instead pre-built images should be used, ideally official images from upstream.
+* Always use lock-files if they exists (for example package-lock.json for node-projects)
