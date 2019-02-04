@@ -68,7 +68,7 @@
       {"blankLine": "always", "prev": ["const", "let"], "next": "*"},
       {"blankLine": "any", "prev": ["const", "let"], "next": ["const", "let"]}
     ],
-    "quote-props": ["error", "always"],
+    "quote-props": ["error", "as-needed"],
     "quotes": ["error", "single"],
     "semi-spacing": ["error", {"before": false, "after": true}],
     "semi-style": ["error", "last"],
