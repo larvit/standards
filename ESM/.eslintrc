@@ -63,7 +63,6 @@
     "no-whitespace-before-property": ["error"],
     "nonblock-statement-body-position": ["error", "beside"],
     "one-var": ["error", "never"],
-    "padded-blocks": ["error", "never"],
     "padding-line-between-statements": [
       "error",
       {"blankLine": "always", "prev": "*", "next": "return"},
