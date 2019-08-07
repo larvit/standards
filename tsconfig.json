@@ -1,14 +1,15 @@
 {
 	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
 		"allowJs": false,
-		"outDir": "./build",
-		"strict": true,
-		"noUnusedLocals": true,
-		"noImplicitReturns": true,
-		"noFallthroughCasesInSwitch": true,
+		"declaration": true,
 		"esModuleInterop": true,
-		"preserveSymlinks": true
+		"module": "commonjs",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"outDir": "./build",
+		"preserveSymlinks": true,
+		"strict": true,
+		"target": "es5"
 	}
 }
