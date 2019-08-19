@@ -1,7 +1,9 @@
 {
+	"compileOnSave": true,
 	"compilerOptions": {
 		"allowJs": false,
 		"declaration": true,
+		"declarationMap": true,
 		"esModuleInterop": true,
 		"module": "commonjs",
 		"noFallthroughCasesInSwitch": true,
