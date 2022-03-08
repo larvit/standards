@@ -60,7 +60,7 @@
     "linebreak-style": ["error", "unix"],
     "lines-around-comment": ["error", { "beforeBlockComment": true, "afterBlockComment": false }],
     "lines-between-class-members": ["off"],
-    "multiline-ternary": ["error", "never"],
+    "multiline-ternary": ["error", "always-multiline"],
     "new-cap": ["error"],
     "new-parens": ["error"],
     "no-constant-condition": ["error", { "checkLoops": false }],

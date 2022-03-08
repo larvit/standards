@@ -1,7 +1,7 @@
 {
   "root": true,
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 2020
   },
   "env": {
     "es6": true,
@@ -32,7 +32,6 @@
     "linebreak-style": ["error", "unix"],
     "lines-around-comment": ["error", {"beforeBlockComment": true, "afterBlockComment": false}],
     "lines-between-class-members": ["error", "always"],
-    "multiline-ternary": ["error", "never"],
     "new-cap": ["error"],
     "new-parens": ["error"],
     "no-dupe-args": ["error"],
