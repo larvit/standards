@@ -1,0 +1,14 @@
+name: Publish NPM larvit lib
+
+on:
+  workflow_call:
+    secrets:
+      NPM_TOKEN:
+        required: true
+
+jobs:
+  publish:
+      runs-on: ubuntu-latest
+
+      steps:
+        - run: echo "Got secret NPM_TOKEN, len is " && echo ${{ secrets.NPM_TOKEN }} | wc -c
