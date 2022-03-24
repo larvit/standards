@@ -12,5 +12,9 @@
 	},
 	"major": {
 		"automerge": false
+	},
+	"prBodyNotes": ["{{#if isMajor}}:warning: MAJOR version :warning:{{/if}}"],
+	"vulnerabilityAlerts": {
+		"automerge": false
 	}
 }
