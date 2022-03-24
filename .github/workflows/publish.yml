@@ -11,4 +11,6 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        - run: echo "Got secret NPM_TOKEN, len is " && echo ${{ secrets.NPM_TOKEN }} | wc -c
+        - uses: JS-DevTools/npm-publish@v1
+          with:
+            token: ${{ secrets.NPM_TOKEN }}
