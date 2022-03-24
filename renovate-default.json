@@ -7,6 +7,9 @@
 	],
 	"automerge": true,
 	"bumpVersion": "patch",
+	"lockFileMaintenance": {
+		"enabled": false
+	},
 	"major": {
 		"automerge": false
 	}
