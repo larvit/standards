@@ -51,7 +51,7 @@ jobs:
         mariadb version: ${{ inputs.mariadb_version }}
         mysql database: 'test'
         mysql root password: 'test'
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - shell: bash
       run: |
         cat << EOF > ./config/db_test.json
