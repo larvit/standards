@@ -11,7 +11,7 @@
 		"enabled": false
 	},
 	"major": {
-		"automerge": false
+		"automerge": true
 	},
 	"prBodyNotes": ["{{#if isMajor}}:warning: MAJOR version :warning:{{/if}}"],
 	"vulnerabilityAlerts": {
