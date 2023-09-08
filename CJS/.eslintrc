@@ -59,6 +59,7 @@
     "no-var": ["error"],
     "no-whitespace-before-property": ["error"],
     "nonblock-statement-body-position": ["error", "beside"],
+    "object-curly-spacing": ["error", "always"],
     "one-var": ["error", "never"],
     "padding-line-between-statements": [
       "error",
